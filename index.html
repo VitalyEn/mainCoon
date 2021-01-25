@@ -12,24 +12,73 @@
 
 <body>
   <header class="header">
-    <div class="logo">
-
+    <div class="header__container container">
+      <a class="logo header__logo">
+        Логотип питомника Мэйнкунов
+      </a>
+      <ul class="social header__social">
+        <li class="social__item">
+          <a class="social__link" href="#">vkontakte</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">twitter</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">facebook</a>
+        </li>
+      </ul>
     </div>
-    <div class="description">
-      Новосибирск
-      <h1>Питомник Мейн-Кунов</h1>
-      Первый питомник с расширенным спектром услуг
-    </div>
-    <div class="social">
-
-    </div>
-    <div class="button">
-      Смотреть котиков
+    <div class="header__content">
+      <p class="header__city">Новосибирск</p>
+      <h1 class="header__title">Питомник Мейн-Кунов</h1>
+      <p class="description__text">Первый питомник с расширенным спектром услуг</p>
+      <a class="header__btn" href="#">Смотреть котиков</a>
     </div>
   </header>
+
   <main class="page-content">
-    <section class="cats">
-      <h2>Питомцы</h2>
+    <section class="section pets">
+      <div class="section__wrapper pets__wrapper container">
+        <h2 class="section__title pets__title">Питомцы</h2>
+        <p class="section__lead pets__lead">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
+        <ul class="pets__list">
+          <li class="pets__item">
+            <a class="pets__tab pets__tab--active" href="#">Коты</a>
+          </li>
+          <li class="pets__item">
+            <a class="pets__tab" href="#">Кошки</a>
+          </li>
+          <li class="pets__item">
+            <a class="pets__tab" href="#">Котята</a>
+          </li>
+        </ul>
+        <div class="pets__tab-content-wrapper">
+          <div class="pets__tab-content show slider">
+            <div class="pets__slider slider__list slider__container">
+              <div class="gallery slider__wrapper">
+                <div class="gallery__item gallery__item--top slider__slide">
+
+                </div>
+                <div class="gallery__item gallery__item--bottom slider__slide">
+
+                </div>
+                <div class="gallery__item gallery__item--large slider__slide slider__slide--active">
+
+                </div>
+              </div>
+            </div>
+            <button class="slider__button slider__button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="slider__button slider__button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+            <div class="pets__btn-wrapper">
+              <a href="#" class="pets__btn">Смотреть больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="features">
       <h2>Особенности породы</h2>
