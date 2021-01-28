@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #151313;
+}
+
+div {
+  outline: 2px solid red;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.section__lead {
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #a07b50;
+}
+
+.pets {
+  background-color: #1f1c1d;
+}
+
+.breed-features {
+  background-color: #1f1c1d;
+}
+
+.faq {
+  background-color: #1f1c1d;
+}
+
+.reviews {
+  background-color: #1f1c1d;
+}
+
+.show {
+  display: block;
+}
