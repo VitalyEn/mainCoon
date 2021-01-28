@@ -11,11 +11,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-
   font-size: 11px;
   line-height: 16px;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
   background-color: #151313;
 }
 
@@ -52,7 +51,7 @@ img {
   font-weight: normal;
   font-size: 36px;
   line-height: 42px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
 
