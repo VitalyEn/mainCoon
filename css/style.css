@@ -1,3 +1,43 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotolight.woff2"), url("../fonts/Robotolight.woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto.woff2"), url("../fonts/Roboto.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotomedium.woff2"), url("../fonts/Robotomedium.woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotobold.woff2"), url("../fonts/Robotobold.woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../fonts/yesevaone.woff2"), url("../fonts/yesevaone.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -9,8 +49,10 @@ html {
 }
 
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 11px;
   line-height: 16px;
   font-weight: 400;
@@ -52,11 +94,20 @@ img {
   padding: 0 40px;
 }
 
+.header {
+  position: relative;
+  background-color: #151313;
+}
+
 .header__container {
   position: relative;
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 80px;
+  background-image: url("../img/main-cat-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 684px auto;
+  background-position: right 0 bottom 0;
 }
 
 .header__wrapper {
@@ -71,6 +122,25 @@ img {
   padding-bottom: 64px;
   overflow: hidden;
   z-index: 2;
+}
+
+.header__logo {
+  display: block;
+  width: 100%;
+  margin-bottom: 78px;
+  text-align: center;
+}
+
+.header__logo svg {
+  fill: #a07b50;
+  stroke: #151313;
+  stroke-width: 0.8;
+  transition: fill 0.3s ease-out;
+}
+
+.header__logo svg:hover,
+.header__logo svg:focus {
+  fill: #fff;
 }
 
 .slider {
